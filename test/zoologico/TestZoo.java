@@ -12,12 +12,16 @@ public class TestZoo {
 		
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		
+<<<<<<< HEAD
 		System.out.println(lujan.getAreaMamiferos());
 		
 		lujan.agregarAnimal(mamifero1);
 		
 		System.out.println(lujan.getAreaMamiferos());
 
+=======
+		assertTrue(lujan.agrearAnimal(mamifero1));
+>>>>>>> DevFabricio
 	}
 	
 	@Test
