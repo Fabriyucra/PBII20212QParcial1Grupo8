@@ -26,7 +26,28 @@ public class TestZoo {
 		lujan.agrearAnimal(mamifero1);
 		lujan.agrearAnimal(mamifero2);
 		
-		lujan.emitirTicket(1,new Persona("Riquelme",45));
+		lujan.emitirTicket(new Persona("Riquelme",45));
+		
+	}
+	
+	@Test
+	public void queSePuedaObtenerCantidadDeEntradasVendidas(){
+		
+		Zoo lujan = new Zoo("Lujan");
+		
+		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 200.0, 10.0, "Gris");
+		
+		lujan.agrearAnimal(mamifero1);
+		lujan.agrearAnimal(mamifero2);
+		
+		lujan.emitirTicket(new Persona("Riquelme",45));
+		lujan.emitirTicket(new Persona("Bianchi",99));
+		lujan.emitirTicket(new Persona("Tevez",40));
+		
+		Integer resultadoEsperado = 3;
+		
+		assertEquals(resultadoEsperado, lujan.obtenerEntradasVendidas());
 		
 	}
 	
@@ -60,6 +81,22 @@ public class TestZoo {
 		Integer resultadoEsperado= 2;
 		
 		assertEquals(resultadoEsperado, lujan.obtenerAnimalesZoo());
+	}
+	
+	@Test
+	public void queSePuedaAgregarAveAAreaAves() {
+	}
+	
+	@Test
+	public void queSePuedaAgregarReptilAAreaReptil() {
+	}
+	
+	@Test
+	public void queSePuedaAgregarPezAAreaPeces() {
+	}
+
+	@Test
+	public void queSePuedaAgregarMamiferoAAreaMamifero() {
 	}
 
 }
