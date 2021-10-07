@@ -11,4 +11,12 @@ public class Ave extends Animal {
 		setTipoSangre(TipoSangre.ENDOTERMO);
 	}
 
+	
+	public Boolean volar() {
+		Boolean puedeVolar = false;
+		if(getArea().equals(TipoArea.AVES)) {
+			puedeVolar=true;
+		}
+		return puedeVolar;
+	}
 }
