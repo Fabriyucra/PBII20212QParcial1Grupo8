@@ -12,7 +12,7 @@ public class Reptil extends Animal {
 	}
 	public Boolean reptar() {
 		Boolean puedeReptar = false;
-		if(getArea().equals(TipoArea.REPTILES)) {
+		if(getArea().equals(TipoArea.REPTILES))  {
 			puedeReptar=true;
 		}
 		return puedeReptar;
