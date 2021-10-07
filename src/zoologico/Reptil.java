@@ -10,6 +10,12 @@ public class Reptil extends Animal {
 		setArea(TipoArea.REPTILES);
 		setTipoSangre(TipoSangre.ECTOTERMO);
 	}
-
+	public Boolean reptar() {
+		Boolean puedeReptar = false;
+		if(getArea().equals(TipoArea.REPTILES)) {
+			puedeReptar=true;
+		}
+		return puedeReptar;
+	}
 	
 }
