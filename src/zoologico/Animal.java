@@ -50,7 +50,7 @@ public class Animal {
 		this.tipoSangre = tipoSangre;
 	}
 
-	public String getReproduccion() {
+	public String getReproduccion() { 
 		return reproduccion;
 	}
 
