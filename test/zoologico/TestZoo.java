@@ -8,17 +8,17 @@ public class TestZoo {
 	@Test
 	public void queSePuedaAgregarAnimalesAlZoo(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		
-		assertTrue(lujan.agrearAnimal(oso));
+		assertTrue(lujan.agrearAnimal(mamifero1));
 	}
 	
 	@Test
 	public void queSePuedaEmitirEntrada(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 200.0, 10.0, "Gris");
@@ -33,7 +33,7 @@ public class TestZoo {
 	@Test
 	public void queSePuedaObtenerCantidadDeEntradasVendidas(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 200.0, 10.0, "Gris");
@@ -54,7 +54,7 @@ public class TestZoo {
 	@Test
 	public void queSePuedaCalcularAlimentoPorArea(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 30.0, 3.0, "Gris");
@@ -70,7 +70,7 @@ public class TestZoo {
 	@Test
 	public void queSePuedaObtenerCantidadTotalAnimalesEnElZoo(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 30.0, 3.0, "Gris");
