@@ -1,16 +1,14 @@
 package zoologico;
 
 public class Ave extends Animal {
-
 	private String colorPlumaje;
 
-	public Ave(String nombre, String area, Double peso, Double alimento, String colorPlumaje) {
-		super(nombre, area, peso, alimento);
+	public Ave(String nombre, String sexo, String reproduccion, Double peso, Double alimento, String colorPlumaje) {
+		super(nombre, sexo, reproduccion, peso, alimento);
 		this.colorPlumaje = colorPlumaje;
 		setArea(TipoArea.AVES);
 		setTipoSangre(TipoSangre.ENDOTERMO);
 	}
-
 	
 	public Boolean volar() {
 		Boolean puedeVolar = false;
