@@ -5,33 +5,70 @@ import java.util.ArrayList;
 public class Zoologico {
 private String nombreZoo;
 
-ArrayList<Ave> AreaAves = new ArrayList<Ave>();
-ArrayList<Mamifero> AreaMamifero = new ArrayList<Mamifero>();
-ArrayList<Pez> AreaPeces = new ArrayList<Pez>();
-ArrayList<Anfibio> AreaAnfibio = new ArrayList<Anfibio>();
-ArrayList<Reptil> AreaReptiles = new ArrayList<Reptil> ();
+ArrayList<Animal> areaAves;
+ArrayList<Animal> areaMamiferos;
+ArrayList<Animal> areaPeces;
+ArrayList<Animal> areaAnfibios;
+ArrayList<Animal> areaReptiles;
 
-public Zoologico(String nombreZoo, ArrayList<Ave> areaAves, ArrayList<Mamifero> areaMamifero, ArrayList<Pez> areaPeces,
-		ArrayList<Anfibio> areaAnfibio, ArrayList<Reptil> areaReptiles) {
-	super();
+public Zoologico(String nombreZoo) {
+
 	this.nombreZoo = nombreZoo;
-	AreaAves = areaAves;
-	AreaMamifero = areaMamifero;
-	AreaPeces = areaPeces;
-	AreaAnfibio = areaAnfibio;
-	AreaReptiles = areaReptiles;
+	areaAves = new ArrayList<>();
+	areaMamiferos = new ArrayList<>();
+	areaPeces = new ArrayList<>();
+	areaAnfibios = new ArrayList<>();
+	areaReptiles = new ArrayList<>();
 }
 
-public String getNombreZoo() {
-	return nombreZoo;
+public void agregarAnimal(Animal animal) {
+
+	switch (animal.getArea()) {
+	case AVES:
+		
+		break;
+	case REPTILES:
+		
+		break;
+	case PECES:
+		areaPeces.add(animal);
+		
+		break;
+	case ANFIBIOS:
+		
+		break;
+	case MAMIFEROS:
+		areaMamiferos.add(animal);
+		
+		break;
+	default:
+		break;
+	}
+	
+	};
+	
+	public Integer getAreaPeces() {
+	return areaPeces.size();
 }
 
-public void setNombreZoo(String nombreZoo) {
-	this.nombreZoo = nombreZoo;
+	public Integer getAreaMamiferos() {
+	return areaMamiferos.size();
 }
- 
-public void emitirEntrada() {};
-public void agregarAnimal() {};
+
+	
+	
+	
+	
+	
+	public String getNombreZoo() {
+		return nombreZoo;
+	}
+
+	public void setNombreZoo(String nombreZoo) {
+		this.nombreZoo = nombreZoo;
+	}
+	 
+	public void emitirEntrada() {};
 public void calcularAnimales() {};
 public void calcularAnimalesPorArea() {};
 public void calcularAlimentoPorArea() {}; 
