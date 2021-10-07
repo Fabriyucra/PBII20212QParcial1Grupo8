@@ -21,8 +21,6 @@ public Zoologico(String nombreZoo) {
 	areaReptiles = new ArrayList<>();
 }
 
-
-
 public void agregarAnimal(Animal animal) {
 
 	switch (animal.getArea()) {
