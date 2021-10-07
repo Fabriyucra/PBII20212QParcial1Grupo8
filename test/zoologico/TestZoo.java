@@ -1,9 +1,9 @@
-package test;
+package zoologico;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestAnimales {
+public class TestZoo {
 
 	@Test
 	public void test() {
