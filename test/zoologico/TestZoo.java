@@ -6,22 +6,27 @@ import org.junit.Test;
 public class TestZoo {
 
 	@Test
-	public void queSePuedaAgregarAnimalesAlZoo(){
+	public void queSePuedaAgregarAnimalesAlZoologico(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
-		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		
-		assertTrue(lujan.agrearAnimal(mamifero1));
+		System.out.println(lujan.getAreaMamiferos());
+		
+		lujan.agregarAnimal(mamifero1);
+		
+		System.out.println(lujan.getAreaMamiferos());
+
 	}
 	
 	@Test
 	public void queSePuedaEmitirEntrada(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
-		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
-		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 200.0, 10.0, "Gris");
+		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
 		lujan.agrearAnimal(mamifero1);
 		lujan.agrearAnimal(mamifero2);
@@ -33,10 +38,10 @@ public class TestZoo {
 	@Test
 	public void queSePuedaObtenerCantidadDeEntradasVendidas(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
-		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
-		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 200.0, 10.0, "Gris");
+		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
 		lujan.agrearAnimal(mamifero1);
 		lujan.agrearAnimal(mamifero2);
@@ -54,10 +59,10 @@ public class TestZoo {
 	@Test
 	public void queSePuedaCalcularAlimentoPorArea(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
-		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
-		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 30.0, 3.0, "Gris");
+		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
 		lujan.agrearAnimal(mamifero1);
 		lujan.agrearAnimal(mamifero2);
@@ -68,19 +73,19 @@ public class TestZoo {
 	}
 	
 	@Test
-	public void queSePuedaObtenerCantidadTotalAnimalesEnElZoo(){
+	public void queSePuedaObtenerCantidadTotalAnimalesEnElZoologico(){
 		
-		Zoo lujan = new Zoo("Lujan");
+		Zoologico lujan = new Zoologico("Lujan");
 		
-		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
-		Animal mamifero2 = new Mamifero("Mono", "Viviparo", 30.0, 3.0, "Gris");
+		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
+		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
 		lujan.agrearAnimal(mamifero1);
 		lujan.agrearAnimal(mamifero2);
 		
 		Integer resultadoEsperado= 2;
 		
-		assertEquals(resultadoEsperado, lujan.obtenerAnimalesZoo());
+		assertEquals(resultadoEsperado, lujan.obtenerAnimalesZoologico());
 	}
 	
 	@Test
