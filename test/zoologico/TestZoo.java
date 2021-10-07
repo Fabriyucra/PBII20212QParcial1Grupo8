@@ -12,7 +12,7 @@ public class TestZoo {
 		
 		Animal mamifero1 = new Mamifero("Oso", "Viviparo", 200.0, 10.0, "Negro");
 		
-		assertTrue(lujan.agrearAnimal(oso));
+		assertTrue(lujan.agrearAnimal(mamifero1));
 	}
 	
 	@Test
