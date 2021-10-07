@@ -11,8 +11,6 @@ ArrayList<Pez> AreaPeces = new ArrayList<Pez>();
 ArrayList<Anfibio> AreaAnfibio = new ArrayList<Anfibio>();
 ArrayList<Reptil> AreaReptiles = new ArrayList<Reptil> ();
 
-
-
 public Zoologico(String nombreZoo, ArrayList<Ave> areaAves, ArrayList<Mamifero> areaMamifero, ArrayList<Pez> areaPeces,
 		ArrayList<Anfibio> areaAnfibio, ArrayList<Reptil> areaReptiles) {
 	super();
