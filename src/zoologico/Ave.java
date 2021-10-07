@@ -1,7 +1,6 @@
 package zoologico;
 
 public class Ave extends Animal {
-
 	private String colorPlumaje;
 
 	public Ave(String nombre, String reproduccion, Double peso, Double alimento, String colorPlumaje) {
@@ -18,7 +17,4 @@ public class Ave extends Animal {
 		}
 		return puedeVolar;
 	}
-
-	
-
 }
