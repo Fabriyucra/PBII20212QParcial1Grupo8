@@ -6,8 +6,9 @@ import org.junit.Test;
 public class TestAnimales {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void queUnPezPuedaNadar() {
+		
+		Animal pez1 = new Pez("Pez Globo", "Oviparo", 0.3, 0.3, "Salada");
+		
 	}
-
 }
