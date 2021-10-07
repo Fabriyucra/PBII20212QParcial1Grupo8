@@ -6,7 +6,7 @@ public class Reptil extends Animal {
 	
 	public Reptil(String nombre, String sexo, String reproduccion, Double peso, Double alimento, String tipoEscamas) {
 		super(nombre, sexo, reproduccion, peso, alimento);
-		this.tipoEscamas = tipoEscamas;
+		this.tipoEscamas = tipoEscamas; 
 		setArea(TipoArea.REPTILES);
 		setTipoSangre(TipoSangre.ECTOTERMO);
 	}
