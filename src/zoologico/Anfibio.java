@@ -3,7 +3,7 @@ package zoologico;
 public class Anfibio extends Animal {
 	private TipoRespiracion respiracion;
 	
-	public Anfibio(String nombre, String reproduccion, Double peso, Double alimento, TipoRespiracion respiracion) {
+	public Anfibio(String nombre, String reproduccion, Double peso, Double alimento) {
 		super(nombre, reproduccion, peso, alimento);
 		this.respiracion = respiracion;
 		
