@@ -38,8 +38,6 @@ public Zoologico(String nombreZoo) {
 >>>>>>> DevFabricio
 }
 
-
-
 public void agregarAnimal(Animal animal) {
 
 	switch (animal.getArea()) {
