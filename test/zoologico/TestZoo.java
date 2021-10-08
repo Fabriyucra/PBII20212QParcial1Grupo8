@@ -28,8 +28,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		lujan.emitirTicket(new Persona("Riquelme",45));
 		
@@ -43,8 +43,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		lujan.emitirTicket(new Persona("Riquelme",45));
 		lujan.emitirTicket(new Persona("Bianchi",99));
@@ -64,8 +64,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		Double resultadoEsperado= 13.0;
 		
@@ -80,8 +80,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		Integer resultadoEsperado= 2;
 		
