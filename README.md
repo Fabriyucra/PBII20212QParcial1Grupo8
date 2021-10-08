@@ -15,12 +15,12 @@
 ### Materia
 
 - Programacion Basica 2
-- 
+
 ### Integrantes
 
-Alejandro @alejandrodcruz-lab
-Ivan @Ivancitoo
-Agustina @agustinavsosa
-Fabricio @Fabriyucra
+- Alejandro @alejandrodcruz-lab
+- Ivan @Ivancitoo
+- Agustina @agustinavsosa
+- Fabricio @Fabriyucra
 
 ### End
