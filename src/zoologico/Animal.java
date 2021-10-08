@@ -1,6 +1,6 @@
 package zoologico;
 
-public class Animal {
+public abstract class Animal {
 	private String nombre;
 	private String sexo;
 	private TipoArea area;

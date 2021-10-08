@@ -2,14 +2,17 @@ package zoologico;
 
 import java.util.ArrayList;
 
-public class Zoologico {
-private String nombreZoo;
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
+public class Zoologico {
+	
+    private String nombreZoo;
 ArrayList<Animal> areaAves;
 ArrayList<Animal> areaMamiferos;
 ArrayList<Animal> areaPeces;
 ArrayList<Animal> areaAnfibios;
 ArrayList<Animal> areaReptiles;
+ArrayList<Entrada> entradas;
 
 public Zoologico(String nombreZoo) {
 
@@ -19,30 +22,30 @@ public Zoologico(String nombreZoo) {
 	areaPeces = new ArrayList<>();
 	areaAnfibios = new ArrayList<>();
 	areaReptiles = new ArrayList<>();
+    entradas = new ArrayList<>();
+
 }
 
-public void agregarAnimal(Animal animal) {
+public Boolean agregarAnimal(Animal animal) {
 
 	switch (animal.getArea()) {
 	case AVES:
+		return areaAves.add(animal);
 		
-		break;
 	case REPTILES:
+		return areaReptiles.add(animal);
 		
-		break;
 	case PECES:
-		areaPeces.add(animal);
+		return areaPeces.add(animal);
 		
-		break;
 	case ANFIBIOS:
+		return areaAnfibios.add(animal);
 		
-		break;
 	case MAMIFEROS:
-		areaMamiferos.add(animal);
+		return areaMamiferos.add(animal);
 		
-		break;
 	default:
-		break;
+		return false;
 	}
 	
 	};
@@ -57,9 +60,6 @@ public void agregarAnimal(Animal animal) {
 
 	
 	
-	
-	
-	
 	public String getNombreZoo() {
 		return nombreZoo;
 	}
@@ -68,8 +68,60 @@ public void agregarAnimal(Animal animal) {
 		this.nombreZoo = nombreZoo;
 	}
 	 
-	public void emitirEntrada() {};
-public void calcularAnimales() {};
-public void calcularAnimalesPorArea() {};
-public void calcularAlimentoPorArea() {}; 
+	
+public Boolean emitirEntrada(Entrada entrada) {
+	
+	return entradas.add(entrada);
+	
+
+};
+
+public Integer obtenerEntradasVendidas() {
+	
+	return entradas.size();
+}
+
+public Double calcularAlimentoArea(TipoArea area) {
+	Double acum=0.0;
+	switch (area) {
+	
+	case AVES:
+		for (Animal animal2 : areaAves) {
+			acum += animal2.getAlimento();
+		}
+		return acum;
+		
+	case REPTILES:
+		for (Animal animal2 : areaReptiles) {
+			acum += animal2.getAlimento();
+		}
+		return acum;
+		
+	case PECES:
+		for (Animal animal2 : areaPeces) {
+			acum += animal2.getAlimento();
+		}
+		return acum;
+		
+	case ANFIBIOS:
+		for (Animal animal2 : areaAnfibios) {
+			acum += animal2.getAlimento();
+		}
+		return acum;
+		
+	case MAMIFEROS:
+		for (Animal animal2 : areaMamiferos) {
+			acum += animal2.getAlimento();
+		}
+		return acum;
+		
+	default:
+		return 0.0;
+	}
+	
+}
+
+
+
+
 }

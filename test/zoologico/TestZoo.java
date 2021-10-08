@@ -12,11 +12,8 @@ public class TestZoo {
 		
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		
-		System.out.println(lujan.getAreaMamiferos());
+		assertTrue(lujan.agregarAnimal(mamifero1));
 		
-		lujan.agregarAnimal(mamifero1);
-		
-		System.out.println(lujan.getAreaMamiferos());
 
 	}
 	
@@ -28,27 +25,32 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
-		
-		lujan.emitirTicket(new Persona("Riquelme",45));
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
+		Entrada entrada1 = new Entrada("7/10/2021",TipoEntrada.PASE_FULL, new Visitante("Roman", "Riquelme", 40, 16321250));
+
+		assertTrue(lujan.emitirEntrada(entrada1));
 		
 	}
 	
 	@Test
 	public void queSePuedaObtenerCantidadDeEntradasVendidas(){
 		
-		Zoologico lujan = new Zoologico("Lujan");
+Zoologico lujan = new Zoologico("Lujan");
 		
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 200.0, 10.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
-		lujan.emitirTicket(new Persona("Riquelme",45));
-		lujan.emitirTicket(new Persona("Bianchi",99));
-		lujan.emitirTicket(new Persona("Tevez",40));
+		Entrada entrada1 = new Entrada("7/10/2021",TipoEntrada.PASE_FULL, new Visitante("Roman", "Riquelme", 40, 16321250));
+		Entrada entrada2 = new Entrada("8/10/2021",TipoEntrada.PASE_FULL, new Visitante("Junior", "Riquelme", 20, 46321250));
+		Entrada entrada3 = new Entrada("10/10/2021",TipoEntrada.PASE_TRESAREAS, new Visitante("Martin", "Palermo", 43, 17351250));
+
+		assertTrue(lujan.emitirEntrada(entrada1));
+		assertTrue(lujan.emitirEntrada(entrada2));
+		assertTrue(lujan.emitirEntrada(entrada3));
 		
 		Integer resultadoEsperado = 3;
 		
@@ -64,8 +66,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		Double resultadoEsperado= 13.0;
 		
@@ -80,8 +82,8 @@ public class TestZoo {
 		Animal mamifero1 = new Mamifero("Oso","M", "Viviparo", 200.0, 10.0, "Negro");
 		Animal mamifero2 = new Mamifero("Mono","M", "Viviparo", 30.0, 3.0, "Gris");
 		
-		lujan.agrearAnimal(mamifero1);
-		lujan.agrearAnimal(mamifero2);
+		lujan.agregarAnimal(mamifero1);
+		lujan.agregarAnimal(mamifero2);
 		
 		Integer resultadoEsperado= 2;
 		
