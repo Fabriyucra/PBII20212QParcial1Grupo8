@@ -1,6 +1,4 @@
-# PBII20212QParcial1Grupo8
-
-#App Zoo
+# App Zoo
 ![](https://logos-marcas.com/wp-content/uploads/2021/03/San-Diego-Zoo-Logo.jpg)
 
 ### Caracteristicas
@@ -9,12 +7,12 @@
 - Control de Alimentos
 - Control de Entradas
 
-###Modelo
+### Modelo
 
 ![](https://i.ibb.co/QFht4W8/PB2-Grupo8.png)
 
-###Integrantes
+### Integrantes
 
 
 
-###End
+### End
