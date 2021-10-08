@@ -7,12 +7,12 @@ import javax.swing.text.StyledEditorKit.ForegroundAction;
 public class Zoologico {
 
 	private String nombreZoo;
-	ArrayList<Animal> areaAves;
-	ArrayList<Animal> areaMamiferos;
-	ArrayList<Animal> areaPeces;
-	ArrayList<Animal> areaAnfibios;
-	ArrayList<Animal> areaReptiles;
-	ArrayList<Entrada> entradas;
+	private ArrayList<Animal> areaAves;
+	private ArrayList<Animal> areaMamiferos;
+	private ArrayList<Animal> areaPeces;
+	private ArrayList<Animal> areaAnfibios;
+	private ArrayList<Animal> areaReptiles;
+	private ArrayList<Entrada> entradas;
 
 	public Zoologico(String nombreZoo) {
 
