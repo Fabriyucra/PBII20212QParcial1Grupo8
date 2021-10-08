@@ -12,7 +12,7 @@ public class Mamifero extends Animal {
 
 	public Boolean Amamantar() {
 		Boolean puedeAmamantar = false;
-		if(getSexo().equals("Femenino")) {
+		if(getSexo().equals("F")) {
 			puedeAmamantar = true;
 		}
 		return puedeAmamantar;

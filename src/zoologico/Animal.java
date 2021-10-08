@@ -18,8 +18,6 @@ public abstract class Animal {
 		this.alimento = alimento;
 	}
 
- 
-
 	public String getNombre() {
 		return nombre;
 	}
