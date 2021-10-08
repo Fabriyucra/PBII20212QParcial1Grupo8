@@ -6,6 +6,7 @@ public class Anfibio extends Animal {
 	public Anfibio(String nombre, String sexo, String reproduccion, Double peso, Double alimento, TipoRespiracion respiracion) {
 		super(nombre, sexo, reproduccion, peso, alimento);
 		this.respiracion = respiracion;
+		this.setArea(TipoArea.ANFIBIOS);
 		
 	}
 
