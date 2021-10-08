@@ -1,17 +1,19 @@
 package zoologico;
 
 public class Entrada {
-
-	private Integer numero;
+    private String fechaEntrada;
+	private Integer numero ;
 	private Visitante visitanteQueCompraLaEntrada;
 	private TipoEntrada tipo;
 	private Integer precio;
-
+    private static Integer numeroSiguiente = 1;
 	
-	public Entrada(TipoEntrada tipo, Visitante visitanteQueCompraLaEntrada){
-		this.numero = 0;
+	public Entrada(String fechaEntrada, TipoEntrada tipo, Visitante visitanteQueCompraLaEntrada){
+		this.numero = numeroSiguiente;
+		this.fechaEntrada = fechaEntrada; 
 		this.tipo = tipo;
 		this.visitanteQueCompraLaEntrada = visitanteQueCompraLaEntrada;
+		this.numeroSiguiente++ ;
 
 	}
 
@@ -50,6 +52,16 @@ public class Entrada {
 			precio = 0;
 		}
 		
+	}
+
+
+	public String getFechaEntrada() {
+		return fechaEntrada;
+	}
+
+
+	public void setFechaEntrada(String fechaEntrada) {
+		this.fechaEntrada = fechaEntrada;
 	}
 	
 		
